@@ -49,7 +49,7 @@ public class MaxMins {
       Scanner sc = new Scanner(System.in); // 스캐너 호출
 
       while (loop) {
-        System.out.print("정수 2개 입력: "); // 안내 문구
+        System.out.println("정수 2개 입력: "); // 안내 문구
         first = sc.nextInt(); // 스캐너로 정수 입력받기
         second = sc.nextInt();
 
