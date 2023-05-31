@@ -1,5 +1,4 @@
 import java.util.Scanner;
-<<<<<<< HEAD
 
 public class MaxMins {
 
@@ -64,6 +63,8 @@ public class MaxMins {
       }
       System.out.println("Max Number is: " + MaxNumber); // 결과 출력
 
+      // Min 값 구하기
+      
       MaxMins maxmins = new MaxMins();
       int result = maxmins.min(first, second); //입력된 값을 fuction min으로 보냄
       System.out.println("작은 값: " + result); //2개의 값 중 작은 값을 출력
