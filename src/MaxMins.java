@@ -1,4 +1,5 @@
 import java.util.Scanner;
+<<<<<<< HEAD
 
 public class MaxMins {
 
@@ -20,6 +21,20 @@ public class MaxMins {
     return result;
 
   }
+
+  public int min(int A, int B) { // main에서 받은 값을 넣어 작은값을 찾아냄
+    int result = 0;
+    try {
+        if (A<B) {
+            result = A;
+        } else if (B<A) {
+            result = B;
+        }
+    } catch (Exception e) {
+        // TODO: handle exception
+    }
+    return result; //결과인 작은값을 다시 main으로 보내줌
+}
 
   // main
   public static void main(String[] args) {
@@ -48,6 +63,10 @@ public class MaxMins {
 
       }
       System.out.println("Max Number is: " + MaxNumber); // 결과 출력
+
+      MaxMins maxmins = new MaxMins();
+      int result = maxmins.min(first, second); //입력된 값을 fuction min으로 보냄
+      System.out.println("작은 값: " + result); //2개의 값 중 작은 값을 출력
 
     } catch (Exception e) {
       // TODO: handle exception
